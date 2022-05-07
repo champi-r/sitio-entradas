@@ -41,7 +41,9 @@ h3{
 main{
     padding: 3.5rem 0;
 }
-
+img{
+    width: 100%;
+}
 /* UTILS */
 .flex-row {
     display: flex;
@@ -56,6 +58,10 @@ main{
 }
 
 /* INDEX */
+.logo-index{
+    display: block;
+    width: 27em;
+}
 .bg-header{
     min-height: 95vh;
     background-image: url('../img/hero.jpg');
@@ -98,39 +104,57 @@ main{
 
 .most-expected{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 27rem);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
     grid-gap: 1rem;
 }
 .expected-one{
     grid-column: 1/2;
-    background-image: url('../img/card-babasonicos.jpeg');
-    background-size: cover;
-    background-position: center center;
+}
+
 }
 .expected-two{
     grid-column: 2/3;
+
 }
 .expected-three{
-    grid-column: 3/5;
+    grid-column: 3/4;
+
 }
 .expected-four{
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 2;
 }
 .expected-five{
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 2;
 }
 .expected-six{
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 2;
 }
-.card{
-    border-radius: 1rem;
-}
+.card, 
 .card-img{
-    height: 100%;
-    object-fit: unset;
-    object-position: center center;
+    border-radius: 1rem;
+    border: 0;
+}
+.card-img-overlay{
+    justify-content: space-between;
+}
+.card-img-overlay > div{
+    justify-content: space-between;
+}
+.card-title{
+    background-color: var(--principal);
+}
+.btn-primary{
+    background-color: var(--principal);
+    border-color: var(--principal);
+    width: 25%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: var(--font-tertiary);
+}
+.btn-primary:hover{
+    background-color: transparent;
 }
