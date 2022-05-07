@@ -38,9 +38,6 @@ h3{
     font-family: var(--font-secondary);
     color: #1C3738;
 }
-main{
-    padding: 3.5rem 0;
-}
 img{
     width: 100%;
 }
@@ -56,7 +53,10 @@ img{
     max-width: 1480px;
     margin: 0 auto;
 }
-
+.soldout{
+    background-color: #E51302!important;
+    text-transform: uppercase;
+}
 /* INDEX */
 .logo-index{
     display: block;
@@ -112,7 +112,6 @@ img{
     grid-column: 1/2;
 }
 
-}
 .expected-two{
     grid-column: 2/3;
 
@@ -140,21 +139,64 @@ img{
 }
 .card-img-overlay{
     justify-content: space-between;
+    position: absolute
 }
 .card-img-overlay > div{
     justify-content: space-between;
+    align-items: baseline;
 }
-.card-title{
-    background-color: var(--principal);
+.card .card-date{
+    background-color: var(--tertiary);
+    font-family: var(--font-secondary);
+    font-size: 1.5em;
+    font-weight: 600;
+    display: inline-block;
+    width: 8.5rem;
+    height: 3rem;
+    text-align: center;
+    position: relative;
+    left: 1.5rem;
+    top: -1rem;
+    padding: 0.8rem;
 }
-.btn-primary{
+.card .fa-circle-info{
+    font-size: 2em;
+    padding-left: 1em;
+    color: var(--secondary);
+}
+
+.card .btn-primary{
     background-color: var(--principal);
     border-color: var(--principal);
     width: 25%;
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-transform: uppercase;
     font-family: var(--font-tertiary);
+    z-index: -1;
 }
 .btn-primary:hover{
-    background-color: transparent;
+    background-color: var(--bg-color);
+    color: var(--principal);
+    border: var(--bg-color);
+}
+.card:hover .btn-primary{
+    z-index: 1;
+}
+
+/* PAGES */
+.logo-pages{
+    width: 20rem;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-nav{
+    align-items: center;
+}
+.navbar-nav .menu__links{
+    justify-content: space-between;
+    margin: 0 .7rem
+}
+.navbar-nav .link{
+    font-size: 1.5em;
 }
