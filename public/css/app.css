@@ -289,3 +289,22 @@ footer{
 .navbar-nav .link{
     font-size: 1.5em;
 }
+
+/* EVENT */
+.event-banner img{
+    margin-bottom: 7rem;
+}
+.event-title{
+    justify-content: space-around;
+}
+.event-options{
+    align-content: center;
+}
+.event-option{
+    padding: 0 15%;
+}
+.event-option ul{
+    justify-content: space-around;
+    border: 1px solid #7c817c;
+    border-radius: 20px;
+}
