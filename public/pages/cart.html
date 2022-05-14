@@ -1,14 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Babasonicos - Carrito</title>
+    <title>Wisin & Yandel - Entradas</title>
     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
+
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-black">
+            <div class="container-fluid">
+                <a href="../../index.html" class="logo-pages">
+                    <img src="../img/logo-entradaplus.png" alt="logo de entrada plus">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item menu__links">
+                            <a class="link" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item menu__links">
+                            <a class="link" href="#">Teatro</a>
+                        </li>
+                        <li class="nav-item menu__links">
+                            <a class="link" href="#">Música</a>
+                        </li>
+                        <li class="nav-item menu__links">
+                            <a class="link" href="#">Deporte</a>
+                        </li>
+                        <li class="nav-item menu__links">
+                            <a class="link" href="#">Atracciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <picture class="event-banner">
+            <img src="../img/banner-wyy.jpg" alt="banner babasonicos">
+        </picture>
+        <div class="container">
+            <section class="event-options">
+                <div class="event-title flex-row">
+                    <h3>Wisin & Yandel</h3>
+                    <h3>Movistar Arena</h3>
+                    <h3>Domingo 12 de junio </h3>
+                </div>
+                <div class="flex-row">
+                    <div class="map-ubication">
+                        <picture>
+                            <img src="../img/movistarargentina.png" alt="mapa ubicaciones">
+                        </picture>
+                        <p>*Máximo de 6 entradas</p>
+                        <p>Más cargos por servicio</p>
+                    </div>
+                    <div class="election-ubication">
+                        <div class="event-options flex-column">
+                            <div class="ticket-option">
+                                <ul class="flex-row">
+                                    <li></li>
+                                    <li>Campo</li>
+                                    <li>$14000</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="ticket-option">
+                                <ul class="flex-row">
+                                    <li></li>
+                                    <li>Campo VR</li>
+                                    <li>$11000</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="ticket-option">
+                                <ul class="flex-row">
+                                    <li></li>
+                                    <li>Platea Pref</li>
+                                    <li>$9000</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="ticket-option">
+                                <ul class="flex-row">
+                                    <li></li>
+                                    <li>Platea Baja</li>
+                                    <li>$7500</li>
+                                    <li>Agotado</li>
+                                </ul>
+                            </div>
+                            <div class="ticket-option">
+                                <ul class="flex-row">
+                                    <li></li>
+                                    <li>Platea Alta C</li>
+                                    <li>$5500</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="ticket-option">
+                                <ul class="flex-row">
+                                    <li></li>
+                                    <li>Platea Alta L</li>
+                                    <li>$2700</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="cart flex-column">
+                    <div class="flex-row">
+                        <p>Total por Entradas</p>
+                        <p><span>$10600</span></p>
+                    </div>
+                    <div class="flex-row">
+                        <p>TOtal Cargo por Servicio</p>
+                        <p><span>$400</span></p>
+                    </div>
+                    <div class="flex-row">
+                        <p>TOtal a Pagar</p>
+                        <p><span>$11000</span></p>
+                    </div>
+                </div>
+                <div class="control-cart flex-row">
+                    <a class="btn btn-secondary" href="#" role="button">Reiniciar</a>
+                    <a class="btn btn-primary" href="#" role="button">Confirmar</a>
+                </div>
+            </section>
+        </div>
+    </main>
 
+    <footer>
+        <div class="container flex-column">
+            <div class="footer-columns flex-row">
+                <div class="footer-column">
+                    <img src="../img/logo-entradaplus.png" alt="logo de entrada plus">
+                    <p>Desarrollo e innovación para la venta de espectáculos.</p>
+                </div>
+                <div class="footer-column">
+                    <h6>COMPRÁ CON CONFIANZA</h6>
+                    <ul>
+                        <li><a href="#">¿Cómo Comprar?</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Compra Arrepentida</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h6>CATEGORÍAS</h6>
+                    <ul>
+                        <li><a href="#">Teatro</a></li>
+                        <li><a href="#">Música</a></li>
+                        <li><a href="#">Deporte</a></li>
+                        <li><a href="#">Atracciones</a></li>
+                        <li><a href="#">Stream</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h6>REDES</h6>
+                    <ul class="items-socials flex-row">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright flex-row">
+                <p>Diego Reynoso</p>
+                <p>Proyecto Coderhouse JavaScript</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/101c8b53b0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
