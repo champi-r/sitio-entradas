@@ -50,7 +50,7 @@
             <img src="../img/banner-wyy.jpg" alt="banner babasonicos">
         </picture>
         <div class="container">
-            <section class="cart-options">
+            <section class="section-cart">
                 <div class="cart-title flex-row">
                     <h3>Wisin & Yandel</h3>
                     <h3>Movistar Arena</h3>
@@ -64,88 +64,77 @@
                         <p>*Máximo de 6 entradas</p>
                         <p>Más cargos por servicio</p>
                     </div>
-                    <div class="election-ubication">
-                        <div class="cart-options flex-column">
-                            <div class="title ticket-option">
-                                <ul class="flex-row">
-                                    <li></li>
-                                    <li>Sector</li>
-                                    <li>Precio</li>
-                                    <li>Cantidad</li>
-                                </ul>
+                    <div class="election-ubication flex-column">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Sector</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><i class="fa-solid fa-circle"></i></th>
+                                    <td>Campo</td>
+                                    <td>14000</td>
+                                    <td><input type="number" name="campo" id="campo" min="0" max="6"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa-solid fa-circle"></i></th>
+                                    <td>Campo VR</td>
+                                    <td>11000</td>
+                                    <td><input type="number" name="campo" id="campo" min="0" max="6"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa-solid fa-circle"></i></th>
+                                    <td>Platea Pref</td>
+                                    <td>9000</td>
+                                    <td><input type="number" name="campo" id="campo" min="0" max="6"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa-solid fa-circle"></i></th>
+                                    <td>Platea Baja</td>
+                                    <td>7500</td>
+                                    <td><input type="number" name="campo" id="campo" min="0" max="6"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa-solid fa-circle"></i></th>
+                                    <td>Platea Alta C</td>
+                                    <td>6000</td>
+                                    <td><input type="number" name="campo" id="campo" min="0" max="6"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="fa-solid fa-circle"></i></th>
+                                    <td>Platea Alta L</td>
+                                    <td>5500</td>
+                                    <td><input type="number" name="campo" id="campo" min="0" max="6"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="cart-total">
+                            <div class="flex-column">
+                                <div class="flex-row">
+                                    <p>Total por Entradas</p>
+                                    <p class="text-center"><span>$10600</span></p>
+                                </div>
+                                <div class="flex-row">
+                                    <p>Total Cargo por Servicio</p>
+                                    <p class="text-center"><span>$400</span></p>
+                                </div>
+                                <div class="flex-row">
+                                    <p>Total a Pagar</p>
+                                    <p class="text-center"><span>$11000</span></p>
+                                </div>
                             </div>
-                            <div class="ticket-option">
-                                <ul class="flex-row">
-                                    <li><i class="fa-solid fa-circle"></i></li>
-                                    <li>Campo</li>
-                                    <li>$14000</li>
-                                    <li></li>
-                                </ul>
+                            <div class="control-cart flex-row">
+                                <a class="btn btn-secondary" href="#" role="button">Reiniciar</a>
+                                <a class="btn btn-primary" href="#" role="button">Confirmar</a>
                             </div>
-                            <div class="ticket-option">
-                                <ul class="flex-row">
-                                    <li><i class="fa-solid fa-circle"></i></li>
-                                    <li>Campo VR</li>
-                                    <li>$11000</li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="ticket-option">
-                                <ul class="flex-row">
-                                    <li><i class="fa-solid fa-circle"></i></li>
-                                    <li>Platea Pref</li>
-                                    <li>$9000</li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="ticket-option">
-                                <ul class="flex-row">
-                                    <li><i class="fa-solid fa-circle"></i></li>
-                                    <li>Platea Baja</li>
-                                    <li>$7500</li>
-                                    <li>Agotado</li>
-                                </ul>
-                            </div>
-                            <div class="ticket-option">
-                                <ul class="flex-row">
-                                    <li><i class="fa-solid fa-circle"></i></li>
-                                    <li>Platea Alta C</li>
-                                    <li>$5500</li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="ticket-option">
-                                <ul class="flex-row">
-                                    <li><i class="fa-solid fa-circle"></i></li>
-                                    <li>Platea Alta L</li>
-                                    <li>$2700</li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="cart flex-column">
-                            <div class="flex-row">
-                                <p>Total por Entradas</p>
-                                <p><span>$10600</span></p>
-                            </div>
-                            <div class="flex-row">
-                                <p>TOtal Cargo por Servicio</p>
-                                <p><span>$400</span></p>
-                            </div>
-                            <div class="flex-row">
-                                <p>TOtal a Pagar</p>
-                                <p><span>$11000</span></p>
-                            </div>
-                        </div>
-                        <div class="control-cart flex-row">
-                            <a class="btn btn-secondary" href="#" role="button">Reiniciar</a>
-                            <a class="btn btn-primary" href="#" role="button">Confirmar</a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
             </section>
         </div>
     </main>

@@ -322,7 +322,21 @@ footer{
 .map-ubication,
 .election-ubication{
     flex-basis: 35%;
+    justify-content: space-around;
+}
+.map-ubication p{
+    text-align: center;
 }
 .cart-options ul{
     justify-content: space-evenly;
+}
+.cart-total{
+    padding-left: 5rem;
+}
+.cart-total p{
+    flex-basis: 50%;
+}
+.control-cart{
+    padding: 2rem;
+    justify-content: space-around;
 }
