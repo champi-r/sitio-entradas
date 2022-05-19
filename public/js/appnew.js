@@ -19,3 +19,40 @@ const eventos = [
         "id": 3, "evento": "Dua Lipa", "fecha": ["07/08/2022"], "precio": 14300, "stock": 3
     }
 ]
+
+
+const inputCampo = document.getElementById('campo');
+inputCampo.addEventListener("change", calculoTotal);
+
+const inputCampoVr = document.getElementById('campo-vr');
+inputCampoVr.addEventListener("change", calculoTotal);
+
+const inputPpref = document.getElementById('ppref');
+inputPpref.addEventListener("change", calculoTotal);
+
+const inputPbaj = document.getElementById('pbaj');
+inputPbaj.addEventListener("change", calculoTotal);
+
+const inputPpaltC = document.getElementById('palt-c');
+inputPpaltC.addEventListener("change", calculoTotal);
+
+const inputPpaltL = document.getElementById('palt-l');
+inputPpaltL.addEventListener("change", calculoTotal);
+
+let precioTot=0;
+let cantEntradas=0;
+
+function calculoTotal(){
+    precioTot=0;
+    cantEntradas=0;
+    const allInputs = document.querySelectorAll('.election-ubication td input');
+    for (let i=0; i<allInputs.length; i++){
+        if(allInputs[i].value != 0){
+            precioTot = precioTot + allInputs[i].value * eventos[0].entrada[i].precio;
+            cantEntradas = cantEntradas + parseInt(allInputs[i].value);
+        }
+
+    }
+    console.log(precioTot);
+    console.log(cantEntradas);
+}
