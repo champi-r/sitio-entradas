@@ -47,6 +47,7 @@ const allInputs = document.querySelectorAll('.election-ubication td input');
 const totalTickets = document.querySelector('.total-tickets .price span');
 const totalService = document.querySelector('.total-service .price span');
 const totalPrice = document.querySelector('.total-price .price span');
+const buttonConfirm = document.getElementById('button-confirm');
 let precioTot = 0;
 let cantEntradas = 0;
 
@@ -59,9 +60,16 @@ function calculoTotal() {
             cantEntradas = cantEntradas + parseInt(allInputs[i].value);
         }
     }
+    maxTickets(cantEntradas);
+    maxValueInputs();
     totalTickets.innerText = precioTot;
     totalService.innerText = cantEntradas * cargoServicio;
     totalPrice.innerText = precioTot + (cantEntradas * cargoServicio);
+    if(cantEntradas>6){
+        buttonConfirm.classList.add('disabled');
+    } else{
+        buttonConfirm.classList.remove('disabled');
+    }
 }
 
 function resetInputs(){
@@ -71,4 +79,29 @@ function resetInputs(){
     totalTickets.innerText = '';
     totalService.innerText = '';
     totalPrice.innerText = '';
+}
+
+function maxValueInputs(){
+    for (let i = 0; i < allInputs.length; i++) {
+        if(parseFloat(allInputs[i].value) > 6){
+            allInputs[i].value = 6;
+        }
+        
+    }
+}
+
+function maxTickets(tk){
+    if(tk>=6){
+        for (let i = 0; i < allInputs.length; i++) {
+            if (allInputs[i].value == 0) {
+                allInputs[i].disabled=true;
+            } 
+        }
+    } else if (tk<6){
+        for (let i = 0; i < allInputs.length; i++) {
+            if (allInputs[i].value == 0) {
+                allInputs[i].disabled=false;
+            }  
+        }
+    }
 }
