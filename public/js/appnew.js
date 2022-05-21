@@ -3,7 +3,7 @@ const eventos = [
         "id": 1,
         "evento": "Wisin y Yandel",
         "fecha": ["12/06/2022"],
-        "entrada":[
+        "entrada": [
             { "sector": "campo", "precio": 14000, "stock": 10 },
             { "sector": "campo-vr", "precio": 11000, "stock": 10 },
             { "sector": "ppref", "precio": 9000, "stock": 10 },
@@ -40,23 +40,35 @@ inputPpaltC.addEventListener("change", calculoTotal);
 const inputPpaltL = document.getElementById('palt-l');
 inputPpaltL.addEventListener("change", calculoTotal);
 
-let precioTot=0;
-let cantEntradas=0;
+const buttonReset = document.getElementById('button-reset');
+buttonReset.addEventListener("click", resetInputs);
 
-function calculoTotal(){
-    precioTot=0;
-    cantEntradas=0;
-    const allInputs = document.querySelectorAll('.election-ubication td input');
-    for (let i=0; i<allInputs.length; i++){
-        if(allInputs[i].value != 0){
+const allInputs = document.querySelectorAll('.election-ubication td input');
+const totalTickets = document.querySelector('.total-tickets .price span');
+const totalService = document.querySelector('.total-service .price span');
+const totalPrice = document.querySelector('.total-price .price span');
+let precioTot = 0;
+let cantEntradas = 0;
+
+function calculoTotal() {
+    precioTot = 0;
+    cantEntradas = 0;
+    for (let i = 0; i < allInputs.length; i++) {
+        if (allInputs[i].value != 0) {
             precioTot = precioTot + allInputs[i].value * eventos[0].entrada[i].precio;
             cantEntradas = cantEntradas + parseInt(allInputs[i].value);
         }
     }
-    const totalTickets = document.querySelector('.total-tickets .price span');
     totalTickets.innerText = precioTot;
-    const totalService = document.querySelector('.total-service .price span');
-    totalService.innerText = cantEntradas*cargoServicio;
-    const totalPrice =  document.querySelector('.total-price .price span');
-    totalPrice.innerText = precioTot +( cantEntradas*cargoServicio);
+    totalService.innerText = cantEntradas * cargoServicio;
+    totalPrice.innerText = precioTot + (cantEntradas * cargoServicio);
+}
+
+function resetInputs(){
+    for (let i = 0; i < allInputs.length; i++) {
+        allInputs[i].value='';
+    }
+    totalTickets.innerText = '';
+    totalService.innerText = '';
+    totalPrice.innerText = '';
 }
