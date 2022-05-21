@@ -75,6 +75,7 @@ function calculoTotal() {
 function resetInputs(){
     for (let i = 0; i < allInputs.length; i++) {
         allInputs[i].value='';
+        allInputs[i].disabled=false;
     }
     totalTickets.innerText = '';
     totalService.innerText = '';
