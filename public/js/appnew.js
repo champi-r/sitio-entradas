@@ -20,6 +20,7 @@ const eventos = [
     }
 ]
 
+const cargoServicio = 250;
 
 const inputCampo = document.getElementById('campo');
 inputCampo.addEventListener("change", calculoTotal);
@@ -51,8 +52,11 @@ function calculoTotal(){
             precioTot = precioTot + allInputs[i].value * eventos[0].entrada[i].precio;
             cantEntradas = cantEntradas + parseInt(allInputs[i].value);
         }
-
     }
-    console.log(precioTot);
-    console.log(cantEntradas);
+    const totalTickets = document.querySelector('.total-tickets .price span');
+    totalTickets.innerText = precioTot;
+    const totalService = document.querySelector('.total-service .price span');
+    totalService.innerText = cantEntradas*cargoServicio;
+    const totalPrice =  document.querySelector('.total-price .price span');
+    totalPrice.innerText = precioTot +( cantEntradas*cargoServicio);
 }
