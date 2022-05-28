@@ -40,6 +40,74 @@
             <li class="nav-item menu__links">
               <a class="link" href="#">Atracciones</a>
             </li>
+            <div class="user-identified d-none nav-item menu__links">
+              <!-- Button trigger modal -->
+              <button id="loginOut" type="button" class="btn btn-primary flex-row" data-bs-toggle="modal"
+                data-bs-target="#outSession">
+                <span>Diego</span>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="outSession" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-end">
+                      <p class="text-center">¿Desea cerrar la sesión?</p>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button id="confirmLoginOut" type="button" class="btn btn-primary"
+                        data-bs-dismiss="modal">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="login nav-item menu__links">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Iniciar Sesión
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Por favor, inicie sesión</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="username">
+                          <label for="floatingInput">Nombre</label>
+                        </div>
+                        <div class="form-floating">
+                          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                          <label for="floatingPassword">Contraseña</label>
+                        </div>
+
+                        <div class="checkbox mb-3">
+                          <label>
+                            <input id="rememberMe" type="checkbox" value="remember-me"> Recordarme
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button id="loginIn" type="button" class="btn btn-primary" data-bs-dismiss="modal">Iniciar
+                        sesión</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </ul>
         </div>
       </div>
@@ -73,21 +141,29 @@
             WISIN Y YANDEL ANUNCIA SU ÚLTIMO SHOW EN ARGENTINA
           </h3>
           <p>
-            El dúo más iconico del genero urbano, Wisin y Yandel, está listo para cerrar con broche de oro una carrera musical repleta de éxitos, tanto en conjunto como individuales. Para esto se embarcarán en “La Última Misión World Tour”, una gira de conciertos en la que sus fans podrán verlos juntospor última vez sobre el escenario.
+            El dúo más iconico del genero urbano, Wisin y Yandel, está listo para cerrar con broche de oro una carrera
+            musical repleta de éxitos, tanto en conjunto como individuales. Para esto se embarcarán en “La Última Misión
+            World Tour”, una gira de conciertos en la que sus fans podrán verlos juntospor última vez sobre el
+            escenario.
           </p>
           <p>
             El tour desembarcará en el Movistar Arena el 12 de Junio.
           </p>
           <p>
-            La gira pasará por más 25 ciudades alrededor del mundo y que concluirá por todo lo alto con 14 shows soldout en el Coliseo de Puerto Rico, en diciembre.
+            La gira pasará por más 25 ciudades alrededor del mundo y que concluirá por todo lo alto con 14 shows soldout
+            en el Coliseo de Puerto Rico, en diciembre.
           </p>
           <p>
-            El single “No Se Olvida” es el último lanzamiento del dueto, este sencillo formará parte del nuevo álbum de los líderes puertorriqueños que está pautado para su salida al mercado a mitad del 2022. Bajo el nombre de La Última Misión, esta nueva producción marcará el cierre de un ciclo que cambió la historia para siempre en la vida de ambos intérpretes.
+            El single “No Se Olvida” es el último lanzamiento del dueto, este sencillo formará parte del nuevo álbum de
+            los líderes puertorriqueños que está pautado para su salida al mercado a mitad del 2022. Bajo el nombre de
+            La Última Misión, esta nueva producción marcará el cierre de un ciclo que cambió la historia para siempre en
+            la vida de ambos intérpretes.
           </p>
         </div>
         <div>
           <h5>Información importante</h5>
-          <p>Prohibido el ingreso a menores de 3 años. Mayores de 3 años abonan ticket. Menores de 14 años deben ingresar acompañados por un adulto.</p>
+          <p>Prohibido el ingreso a menores de 3 años. Mayores de 3 años abonan ticket. Menores de 14 años deben
+            ingresar acompañados por un adulto.</p>
         </div>
         <div>
           <h5>Ubicación</h5>
@@ -134,7 +210,7 @@
             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
           </ul>
-        </div>   
+        </div>
       </div>
       <div class="copyright flex-row">
         <p>Diego Reynoso</p>
@@ -148,6 +224,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
+  <script src="../js/login.js"></script>
 </body>
 
 </html>

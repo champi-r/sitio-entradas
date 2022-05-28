@@ -88,10 +88,13 @@ p{
     background-size: cover;
     background-position: center center;
 }
-
 .header-comp{
     min-height: 90vh;
     justify-content: space-between;
+}
+.header-top{
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .header-bottom{
@@ -99,7 +102,12 @@ p{
     align-items: flex-end;
     margin-bottom: 2.5rem;
 }
-
+.user-identified .btn{
+    align-items: baseline;
+}
+.user-identified .btn i{
+    margin-left: 0.5rem;
+}
 .header__title{
     color: #ffffff;
     font-family: var(--font-secondary);
