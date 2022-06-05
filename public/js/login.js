@@ -14,13 +14,18 @@ const inputPassword = document.getElementById('floatingPassword');
 const rememberMe = document.getElementById('rememberMe');
 const loginIn = document.getElementById('loginIn');
 
-if(localUser && localPassword || sessionUser && sessionPassword){
-    buttonLogin[0].classList.add("d-none");
-    buttonIdentified[0].classList.remove("d-none");
-    if(localUser== null){
-        buttonName.innerText=sessionUser;
-    } else{
-        buttonName.innerText=localUser;
+// Si existe usuario y contraseña, en sesion o local
+checkSession(localUser, localPassword, sessionUser, sessionPassword);
+
+function checkSession(localUser, localPassword, sessionUser, sessionPassword){
+    if(localUser && localPassword || sessionUser && sessionPassword){
+        buttonLogin[0].classList.add("d-none");
+        buttonIdentified[0].classList.remove("d-none");
+        if(localUser== null){
+            buttonName.innerText=sessionUser;
+        } else{
+            buttonName.innerText=localUser;
+        }
     }
 }
 
@@ -53,4 +58,5 @@ function login (){
     }
     buttonLogin[0].classList.add("d-none");
     buttonIdentified[0].classList.remove("d-none");
+    checkSession(localUser, localPassword, sessionUser, sessionPassword);
 }
