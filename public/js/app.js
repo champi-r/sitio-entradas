@@ -20,6 +20,12 @@ const eventos = [
     }
 ]
 
+function Compra (event, cantTk, tot){
+    this.event = event;
+    this.cantTk = cantTk;
+    this.tot = tot;
+}
+
 const cargoServicio = 250;
 
 const inputCampo = document.getElementById('campo');
@@ -43,11 +49,12 @@ inputPpaltL.addEventListener("change", calculoTotal);
 const buttonReset = document.getElementById('button-reset');
 buttonReset.addEventListener("click", resetInputs);
 
+const buttonConfirm = document.getElementById('button-confirm');
+
 const allInputs = document.querySelectorAll('.election-ubication td input');
 const totalTickets = document.querySelector('.total-tickets .price span');
 const totalService = document.querySelector('.total-service .price span');
 const totalPrice = document.querySelector('.total-price .price span');
-const buttonConfirm = document.getElementById('button-confirm');
 let precioTot = 0;
 let cantEntradas = 0;
 
@@ -56,8 +63,8 @@ function calculoTotal() {
     cantEntradas = 0;
     for (let i = 0; i < allInputs.length; i++) {
         if (allInputs[i].value != 0) {
-            precioTot = precioTot + allInputs[i].value * eventos[0].entrada[i].precio;
-            cantEntradas = cantEntradas + parseInt(allInputs[i].value);
+            precioTot += allInputs[i].value * eventos[0].entrada[i].precio;
+            cantEntradas += parseInt(allInputs[i].value);
         }
     }
     maxTickets(cantEntradas);
@@ -65,7 +72,9 @@ function calculoTotal() {
     totalTickets.innerText = precioTot;
     totalService.innerText = cantEntradas * cargoServicio;
     totalPrice.innerText = precioTot + (cantEntradas * cargoServicio);
-    if(cantEntradas>6){
+    if(cantEntradas==0){
+        buttonConfirm.classList.add('disabled');
+    } else if(cantEntradas>6){
         buttonConfirm.classList.add('disabled');
         inputCampo.addEventListener("click", toastMessage);
         inputCampoVr.addEventListener("click", toastMessage);
@@ -121,10 +130,21 @@ function maxTickets(tk){
 
 const toastMessage = () => {
     Toastify({
-        text: "Entradas maximas superadas",
+        text: "Entradas máximas superadas",
         duration: 3000,
         style: {
             background: "linear-gradient(to right, #FA8007, #CABA15)",
         } 
         }).showToast();
 }
+
+buttonConfirm.addEventListener("click",confirmSweet = () => {
+    const buyConfirm = new Compra (eventos[0].evento, cantEntradas,parseInt(totalPrice.innerText));
+    console.log(buyConfirm);
+    const {event, cantTk, tot} = buyConfirm;
+    Swal.fire(
+        `${event}`,
+        `${cantTk} entradas por un total de ${tot}`,
+        'success'
+      )
+})

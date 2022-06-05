@@ -15,24 +15,19 @@ const rememberMe = document.getElementById('rememberMe');
 const loginIn = document.getElementById('loginIn');
 
 // Si existe usuario y contraseña, en sesion o local
-checkSession(localUser, localPassword, sessionUser, sessionPassword);
-
-function checkSession(localUser, localPassword, sessionUser, sessionPassword){
+const checkSession = (localUser, localPassword, sessionUser, sessionPassword) => {
     if(localUser && localPassword || sessionUser && sessionPassword){
         buttonLogin[0].classList.add("d-none");
         buttonIdentified[0].classList.remove("d-none");
-        if(localUser== null){
-            buttonName.innerText=sessionUser;
-        } else{
-            buttonName.innerText=localUser;
-        }
+        localUser == null ? buttonName.innerText=sessionUser : buttonName.innerText=localUser;
     }
 }
+checkSession(localUser, localPassword, sessionUser, sessionPassword);
 
 loginIn.addEventListener('click', login);
 confirmLoginOut.addEventListener('click', confirmLogout);
 
-function logout(){
+const logout = () =>{
     localStorage.removeItem('name');
     localStorage.removeItem('password');
     sessionStorage.removeItem('name');
