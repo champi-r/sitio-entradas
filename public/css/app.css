@@ -147,27 +147,27 @@ p{
     grid-template-rows: repeat(2, 2fr);
     grid-gap: 1rem;
 }
-.expected-one{
+.expected-0{
     grid-column: 1/2;
 }
 
-.expected-two{
+.expected-1{
     grid-column: 2/3;
 
 }
-.expected-three{
+.expected-2{
     grid-column: 3/4;
 
 }
-.expected-four{
+.expected-3{
     grid-column: 1/2;
     grid-row: 2;
 }
-.expected-five{
+.expected-4{
     grid-column: 2/3;
     grid-row: 2;
 }
-.expected-six{
+.expected-6{
     grid-column: 3/4;
     grid-row: 2;
 }

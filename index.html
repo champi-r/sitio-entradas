@@ -22,23 +22,23 @@
         <div class="user-identified d-none">
           <!-- Button trigger modal -->
           <button id="loginOut" type="button" class="btn btn-primary flex-row" data-bs-toggle="modal"
-          data-bs-target="#outSession">
-          <span>Diego</span>
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        </button>
+            data-bs-target="#outSession">
+            <span>Diego</span>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
 
           <!-- Modal -->
-          <div class="modal fade" id="outSession" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+          <div class="modal fade" id="outSession" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-end">
-                 <p class="text-center">¿Desea cerrar la sesión?</p>
-                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                 <button id="confirmLoginOut" type="button" class="btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
+                  <p class="text-center">¿Desea cerrar la sesión?</p>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button id="confirmLoginOut" type="button" class="btn btn-primary"
+                    data-bs-dismiss="modal">Confirmar</button>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@
                       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                       <label for="floatingPassword">Contraseña</label>
                     </div>
-                
+
                     <div class="checkbox mb-3">
                       <label>
                         <input id="rememberMe" type="checkbox" value="remember-me"> Recordarme
@@ -79,7 +79,8 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                  <button id="loginIn" type="button" class="btn btn-primary" data-bs-dismiss="modal">Iniciar sesión</button>
+                  <button id="loginIn" type="button" class="btn btn-primary" data-bs-dismiss="modal">Iniciar
+                    sesión</button>
                 </div>
               </div>
             </div>
@@ -111,158 +112,16 @@
   <main class="container">
     <section class="section-event">
       <h3 class="subtitle">más esperados</h3>
-      <div class="most-expected">
-        <div class="expected-one card bg-dark text-white">
-          <img src="./public/img/card-babasonicos.jpeg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date">JUN</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="./public/pages/event.html" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-two card bg-dark text-white">
-          <img src="./public/img/card-palmeras.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date soldout">AGOTADO</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary disabled" href="#" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-three card bg-dark text-white">
-          <img src="./public/img/card-karol.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <span class="card-date">SEP</span>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="#" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-four card bg-dark text-white">
-          <img src="./public/img/card-sebmendoza.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date">AGO</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="./public/pages/event.html" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-five card bg-dark text-white">
-          <img src="./public/img/card-yatra.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date">AGO</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="./public/pages/event.html" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-six card bg-dark text-white">
-          <img src="./public/img/card-wyy.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date">JUN</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="./public/pages/event.html" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
+      <div id="most-expected" class="most-expected">
       </div>
     </section>
+
     <section class="section-event">
       <h3 class="subtitle">próximos</h3>
-      <div class="comming">
-        <div class="expected-one card bg-dark text-white">
-          <img src="./public/img/card-plimplim.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date theater">TEATRO</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="./public/pages/event.html" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-two card bg-dark text-white">
-          <img src="./public/img/card-reggaetonold.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date music">MÚSICA</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="#" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-three card bg-dark text-white">
-          <img src="./public/img/card-lesluthiers.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <span class="card-date theater">TEATRO</span>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="#" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-four card bg-dark text-white">
-          <img src="./public/img/card-angela.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date music">MÚSICA</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="./public/pages/event.html" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-five card bg-dark text-white">
-          <img src="./public/img/card-parquecosta.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date atraction">ATRACCIÓN</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="./public/pages/event.html" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="expected-six card bg-dark text-white">
-          <img src="./public/img/card-olympiasud.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay flex-column">
-            <p class="card-date sport">DEPORTE</p>
-            <div class="flex-row">
-              <a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-              </a>
-              <a class="btn btn-primary" href="./public/pages/event.html" role="button">Comprar</a>
-            </div>
-          </div>
-        </div>
+      <div id="comming" class="comming">
       </div>
     </section>
+
   </main>
   <footer>
     <div class="container flex-column">
@@ -314,6 +173,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <script src="./public/js/login.js"></script>
+  <script src="./public/js/script.js"></script>
 </body>
 
 </html>

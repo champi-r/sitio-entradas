@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Angela",
+        "bannerImg": "./public/img/banner-angela.jpg",
+        "cardImg": "./public/img/card-angela.jpg",
+        "month": "JUN",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "comming"
+    },
+    {
+        "name": "Babasonicos",
+        "bannerImg": "./public/img/banner-babasonicos.jpeg",
+        "cardImg": "./public/img/card-babasonicos.jpeg",
+        "month": "JUN",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "most-expected"
+    },
+    {
+        "name": "Karol G",
+        "bannerImg": "./public/img/banner-karol.jpg",
+        "cardImg": "./public/img/card-karol.jpg",
+        "month": "JUN",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "most-expected"
+    },
+    {
+        "name": "Les Luthiers",
+        "bannerImg": "./public/img/banner-lesluthiers.jpg",
+        "cardImg": "./public/img/card-lesluthiers.jpg",
+        "month": "JUN",
+        "category": "Teatro",
+        "class": "theater",
+        "status": "Habilitado",
+        "section": "most-expected"
+    },
+    {
+        "name": "Olyimpia Amateur",
+        "bannerImg": "./public/img/banner-olympiasud.jpg",
+        "cardImg": "./public/img/card-olympiasud.jpg",
+        "month": "OCT",
+        "category": "Deporte",
+        "class": "sport",
+        "status": "Habilitado",
+        "section": "comming"
+    },
+    {
+        "name": "Los Palmeras",
+        "bannerImg": "./public/img/banner-palmeras.jpg",
+        "cardImg": "./public/img/card-palmeras.jpg",
+        "month": "JUL",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "most-expected"
+    },
+    {
+        "name": "Parque de la Costa",
+        "bannerImg": "./public/img/banner-parquecosta.jpg",
+        "cardImg": "./public/img/card-parquecosta.jpg",
+        "month": "ALL",
+        "category": "Atracción",
+        "class": "atraction",
+        "status": "Habilitado",
+        "section": "comming"
+    },
+    {
+        "name": "Plim Plim",
+        "bannerImg": "./public/img/banner-plimplim.jpg",
+        "cardImg": "./public/img/card-plimplim.jpg",
+        "month": "JUL",
+        "category": "Teatro",
+        "class": "theater",
+        "status": "Habilitado",
+        "section": "comming"
+    },
+    {
+        "name": "Reggaeton Old",
+        "bannerImg": "./public/img/banner-reggaetonold.jpg",
+        "cardImg": "./public/img/card-reggaetonold.jpg",
+        "month": "MAY",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "comming"
+    },
+    {
+        "name": "Sebastian Mendoza",
+        "bannerImg": "./public/img/banner-sebmendoza.jpg",
+        "cardImg": "./public/img/card-sebmendoza.jpg",
+        "month": "AGO",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "most-expected"
+    },
+    {
+        "name": "La Oreja de Van Gogh",
+        "bannerImg": "./public/img/banner-vangogh.jpg",
+        "cardImg": "./public/img/card-vangogh.jpg",
+        "month": "NOV",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "comming"
+    },
+    {
+        "name": "Wisin y Yandel",
+        "bannerImg": "./public/img/banner-wyy.jpg",
+        "cardImg": "./public/img/card-wyy.jpg",
+        "month": "JUN",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "most-expected"
+    },
+    {
+        "name": "Sebastian Yatra",
+        "bannerImg": "./public/img/banner-yatra.jpg",
+        "cardImg": "./public/img/card-yatra.jpg",
+        "month": "AGO",
+        "category": "Música",
+        "class": "music",
+        "status": "Habilitado",
+        "section": "most-expected"
+    }
+]
